@@ -1,0 +1,5 @@
+# Course documents: contain teammates' names and student numbers. Keep out of the public repo.
+*.pdf
+*.docx
+# macOS
+.DS_Store
