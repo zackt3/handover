@@ -3,3 +3,6 @@
 *.docx
 # macOS
 .DS_Store
+
+# Simulation harness + tracking site variant: local only, never published
+sim/
