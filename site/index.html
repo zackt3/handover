@@ -203,9 +203,13 @@
 
   footer { padding: 32px 0 48px; color: var(--ink-soft); font-size: .85rem; text-align: center; }
 
+  /* Who-it's-for line */
+  .for-who { display: inline-block; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-size: .9rem; font-weight: 600; margin: 0 0 18px; }
+  .who p { max-width: 46em; }
+
   /* Modal */
   .modal-bg { position: fixed; inset: 0; background: rgba(28,43,36,.55); display: grid; place-items: center; padding: 16px; z-index: 50; }
-  .modal { background: var(--card); border-radius: 22px; padding: 28px; max-width: 420px; width: 100%; box-shadow: var(--shadow); }
+  .modal { background: var(--card); border-radius: 22px; padding: 24px; max-width: 440px; width: 100%; box-shadow: var(--shadow); max-height: 92vh; overflow: auto; }
   .modal h3 { font-size: 1.4rem; }
   .modal p { color: var(--ink-soft); }
 </style>
@@ -245,9 +249,10 @@
         <div data-aud="leaving">
           <div class="eyebrow">For students moving out</div>
           <h1>Leaving Dublin? We'll handle the handover.</h1>
-          <p class="lead">Snap a few photos tonight. Drop everything off at your residence's collection day, or book a pickup. You get paid when it sells, and the next student moves into a room that's ready to live in.</p>
+          <p class="lead">Snap a few photos tonight, or skip that and let us list it for you. Drop everything at a collection day near you, or book a €5 pickup. You get paid when it sells, and the next student moves into a room that's ready to live in.</p>
+          <p class="for-who">🏠 Halls, house shares or apartments · 📅 Moving out in December or May</p>
           <div class="hero-ctas">
-            <button class="btn btn-primary" data-cta>Remind me before the December collection day</button>
+            <button class="btn btn-primary" data-cta>Remind me before my collection day</button>
             <a class="btn btn-ghost" href="#how">How it works</a>
           </div>
         </div>
@@ -255,7 +260,8 @@
         <div data-aud="arriving" class="hidden">
           <div class="eyebrow">For students moving in</div>
           <h1>Arriving in Dublin? Your room, ready from day one.</h1>
-          <p class="lead">Second-hand kitchen, bedroom and study basics, handed over by students who just left. Pick single items or grab a ready-made bundle. Either way, it's waiting at your residence when you arrive, for a fraction of the price of new.</p>
+          <p class="lead">Second-hand kitchen, bedroom and study basics, handed over by students who just left. Pick single items or grab a ready-made bundle. Either way, it's waiting at a collection point near you when you arrive, and you only pay when you collect it.</p>
+          <p class="for-who">🏠 Halls, house shares or apartments · 📅 Arriving in January or September</p>
           <div class="hero-ctas">
             <a class="btn btn-primary" href="#shop">Browse items</a>
             <a class="btn btn-ghost" href="#bundles">See starter bundles</a>
@@ -268,7 +274,7 @@
           <div class="phone-head"><strong>Helena's room</strong><span class="tag">Collection: Sat 12 Dec</span></div>
           <div class="row"><div class="thumb">ICON_KETTLE</div><div>Electric kettle, 1.7L<br><span class="tag">Good condition</span></div><div class="price">€8</div></div>
           <div class="row"><div class="thumb">ICON_LAMP</div><div>Desk lamp, warm white<br><span class="tag">Like new</span></div><div class="price">€10</div></div>
-          <div class="row"><div class="thumb">ICON_DUVET</div><div>Double duvet + 2 pillows<br><span class="tag">Washed</span></div><div class="price">€15</div></div>
+          <div class="row"><div class="thumb">ICON_DUVET</div><div>Double duvet, 10.5 tog<br><span class="tag">Washed at 60°C</span></div><div class="price">€12</div></div>
           <div class="row"><div class="thumb">ICON_BIKE</div><div>City bike + lock<br><span class="tag">Serviced 2026</span></div><div class="price">€60</div></div>
           <div class="phone-foot">✓ 4 items listed in 6 minutes · Drop-off booked</div>
         </div>
@@ -280,7 +286,7 @@
   <div class="strip">
     <div class="wrap strip-grid">
       <div class="strip-item"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><strong>One evening, not three weeks</strong><span>Photos in, listings out. No haggling over a €5 kettle.</span></div></div>
-      <div class="strip-item"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></div><div><strong>We collect, you leave</strong><span>Drop-off days at your residence, or a pickup slot that fits your flight.</span></div></div>
+      <div class="strip-item"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></div><div><strong>We collect, you leave</strong><span>Drop-off days near you, or a pickup from your room, house or apartment.</span></div></div>
       <div class="strip-item"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><div><strong>Students only</strong><span>Every buyer and seller signs in with a college email.</span></div></div>
     </div>
   </div>
@@ -294,8 +300,8 @@
         <p class="lead">You don't need to know where to sell, or wait around for buyers. Handover sells it for you, and you can leave on time.</p>
         <div class="steps four">
           <div class="step"><h3>Snap photos</h3><p>Take a few photos of each thing you can't take home. One photo per item is enough.</p></div>
-          <div class="step"><h3>We draft the listing</h3><p>Handover suggests a title, condition and fair price. Change anything you like, then publish.</p></div>
-          <div class="step hl"><span class="badge">The bit that matters</span><h3>Hand it over</h3><p>Bring everything to your residence's collection day, or book a pickup before you fly. Then you're done.</p></div>
+          <div class="step"><h3>We draft the listing</h3><p>Handover suggests a title, condition and fair price. Change anything you like, then publish. No time? Book a pickup and we'll list everything for you.</p></div>
+          <div class="step hl"><span class="badge">The bit that matters</span><h3>Hand it over</h3><p>Bring everything to a collection day near you, or book a pickup from wherever you live, up to 24 hours before you fly. Then you're done.</p></div>
           <div class="step"><h3>Get paid</h3><p>Your things sell one by one, and anything left over can go into a starter bundle for arriving students. You get 80% of the price, paid to your Revolut or bank account, even after you've left Ireland.</p></div>
         </div>
       </div>
@@ -306,8 +312,8 @@
         <p class="lead">Skip the trip to the shops on your first weekend. Pick what you need now and collect it when you arrive.</p>
         <div class="steps three">
           <div class="step"><h3>Browse or grab a bundle</h3><p>Pick single items from students who've just moved out, or grab a ready-made starter bundle if you just want a working room.</p></div>
-          <div class="step"><h3>Reserve with your college email</h3><p>Students only. Pay a small deposit to hold it until you arrive.</p></div>
-          <div class="step hl"><span class="badge">Ready on arrival</span><h3>Collect on move-in day</h3><p>Your bundle waits at your residence's collection point. Pick it up with your keys.</p></div>
+          <div class="step"><h3>Reserve for free</h3><p>Sign in with your college email and tell us where you're staying and when you arrive. Nothing to pay yet.</p></div>
+          <div class="step hl"><span class="badge">Ready on arrival</span><h3>Collect on move-in day</h3><p>Your things wait at the collection point nearest where you're staying. Check them, then pay by card or Revolut.</p></div>
         </div>
       </div>
     </div>
@@ -325,7 +331,7 @@
             <div class="picker" role="group" aria-label="Example photos">
               <button class="pick" type="button" data-item="kettle" aria-pressed="false">ICON_KETTLE<span>Kettle</span></button>
               <button class="pick" type="button" data-item="lamp" aria-pressed="false">ICON_LAMP<span>Desk lamp</span></button>
-              <button class="pick" type="button" data-item="duvet" aria-pressed="false">ICON_DUVET<span>Duvet set</span></button>
+              <button class="pick" type="button" data-item="duvet" aria-pressed="false">ICON_DUVET<span>Duvet</span></button>
             </div>
             <p class="picker-note">This demo shows example results. In the real app you'd upload your own photos.</p>
           </div>
@@ -342,8 +348,9 @@
     <div class="wrap">
       <div class="eyebrow">Collection days</div>
       <h2>Drop off near home, on the days you're actually leaving <span class="example-tag">Example dates</span></h2>
-      <p class="lead">We run collection days at student residences across Dublin, timed to the December and May move-outs. Bring your things, scan your code, and you're done in ten minutes.</p>
-      <div class="days">
+      <p class="lead">We run collection days in student areas across Dublin, timed to the December and May move-outs. Halls, house shares and apartments are all welcome. Bring your things, scan your code, and you're done in ten minutes.</p>
+      <h3 style="margin-top:28px">December move-out</h3>
+      <div class="days" style="margin-top:12px">
         <div class="day">
           <div class="date"><div class="cal"><div class="m">Dec</div><div class="d">12</div></div><div><h3>City-centre residences</h3><div class="where">Sat · 10:00–16:00 · Common room</div></div></div>
           <ul><li>Furniture, kitchenware, bedding</li><li>Bikes accepted</li><li>Unsold items donated</li></ul>
@@ -357,8 +364,23 @@
           <ul><li>Last day before Christmas flights</li><li>Bikes accepted</li><li>Unsold items donated</li></ul>
         </div>
       </div>
+      <h3 style="margin-top:28px">May move-out</h3>
+      <div class="days" style="margin-top:12px">
+        <div class="day">
+          <div class="date"><div class="cal"><div class="m">May</div><div class="d">28</div></div><div><h3>Phibsborough &amp; Drumcondra</h3><div class="where">Fri · 12:00–19:00 · Community hall</div></div></div>
+          <ul><li>Furniture, kitchenware, bedding</li><li>Bikes accepted</li><li>Unsold items donated</li></ul>
+        </div>
+        <div class="day">
+          <div class="date"><div class="cal"><div class="m">May</div><div class="d">30</div></div><div><h3>Rathmines &amp; Ranelagh</h3><div class="where">Sun · 10:00–16:00 · Bike shed</div></div></div>
+          <ul><li>End of exams, before lease end</li><li>Bikes accepted</li><li>Unsold items donated</li></ul>
+        </div>
+        <div class="day">
+          <div class="date"><div class="cal"><div class="m">Jun</div><div class="d">1</div></div><div><h3>City-centre &amp; Docklands</h3><div class="where">Tue · 10:00–19:00 · Common room</div></div></div>
+          <ul><li>For leases ending 31 May</li><li>Bikes accepted</li><li>Unsold items donated</li></ul>
+        </div>
+      </div>
       <div class="pickup">
-        <p><strong>Can't make a collection day?</strong> Book a room pickup for <strong>€5</strong>. We'll pick up everything in one trip, up to 24 hours before your flight.</p>
+        <p><strong>Can't make a collection day?</strong> Book a pickup for <strong>€5</strong> from your room, house or apartment. We take everything in one trip, up to 24 hours before your flight, and can list it all for you.</p>
         <button class="btn btn-primary btn-sm" data-cta>Book a pickup</button>
       </div>
     </div>
@@ -369,7 +391,7 @@
     <div class="wrap">
       <div class="eyebrow">Browse items</div>
       <h2>Just need a kettle? Buy one thing <span class="example-tag">Example listings</span></h2>
-      <p class="lead">Every item is listed by a student who's moving out. Reserve it now and collect it from the residence collection point. No meeting strangers, no chasing replies.</p>
+      <p class="lead">Every item is listed by a student who's moving out. Reserve it for free, then check it and pay when you collect it at the collection point nearest you. No meeting strangers, no chasing replies.</p>
       <div class="chips" role="group" aria-label="Filter by category">
         <button class="chip" type="button" data-cat="all" aria-pressed="true">All</button>
         <button class="chip" type="button" data-cat="kitchen" aria-pressed="false">Kitchen</button>
@@ -386,7 +408,7 @@
     <div class="wrap">
       <div class="eyebrow">Starter bundles</div>
       <h2>Or skip the browsing: grab a starter bundle <span class="example-tag">Example prices</span></h2>
-      <p class="lead">For when you just want a working room on day one. Put together from what last term's students left behind. Bedding is washed, electricals are checked, and everything waits at your residence when you arrive.</p>
+      <p class="lead">For when you just want a working room on day one. Put together from what last term's students left behind. Duvets are washed at 60°C and sealed, pillows are always new, electricals are checked, and everything waits at a collection point near you. Reserve free, pay when you collect.</p>
       <div class="bundles">
         <div class="bundle">
           <div class="art">ICON_KITCHEN</div>
@@ -402,7 +424,7 @@
           <div class="body">
             <div class="top-row"><h3>Bedroom Starter</h3><div class="pr">€35</div></div>
             <div class="was">About €90 new</div>
-            <ul><li>Duvet + 2 pillows (washed)</li><li>Fitted sheet + cover</li><li>Bedside lamp</li><li>20 hangers</li></ul>
+            <ul><li>2 new pillows</li><li>Duvet, washed at 60°C and sealed</li><li>Fitted sheet + cover (washed)</li><li>Bedside lamp</li></ul>
             <button class="btn btn-ghost btn-sm" data-cta>Reserve for January</button>
           </div>
         </div>
@@ -425,12 +447,23 @@
       <div class="panel">
         <div class="eyebrow">Students only</div>
         <h3>You know who's on the other side</h3>
-        <p>Everyone signs in with a college email address. Payments go through the app, so there's no cash and no strangers at your door.</p>
+        <p>Everyone signs in with a college email address. Buyers pay by card or Revolut when they collect, never upfront, and nobody meets a stranger at their door.</p>
       </div>
       <div class="panel">
         <div class="eyebrow">Nothing in the skip</div>
         <h3>What doesn't sell still gets a second life</h3>
         <p>Anything unsold after the arrivals rush goes to local charity shops and reuse schemes. Your old lamp lights up someone's room instead of a landfill.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="panel who">
+        <div class="eyebrow">Who we are</div>
+        <h3>A small team of students in Dublin</h3>
+        <p>Handover is run by six students, Irish and international, who know the move-out scramble first-hand. We're starting with a few areas this December and adding more in May. After every move-out we publish how many items were resold, donated and binned, so you can see whether it's actually working.</p>
       </div>
     </div>
   </section>
@@ -441,10 +474,13 @@
       <div class="eyebrow">Questions</div>
       <h2>Good to know</h2>
       <details><summary>I'm leaving in three days. Is that too late?</summary><p>No. List tonight, then book a pickup or bring everything to the next collection day. Handover keeps selling after you've gone, and pays you wherever you are.</p></details>
+      <details><summary>Arriving: what if something I reserved is damaged, or I arrive late?</summary><p>Check it when you collect. If it isn't as described, leave it and you pay nothing. Reservations are held for a week after the arrival date you give us.</p></details>
       <details><summary>What if my things don't sell?</summary><p>Unsold items go to local charity shops and reuse schemes, so you never have to come back for them or pay to dump them.</p></details>
       <details><summary>How much do I get?</summary><p>You keep 80% of the sale price. The rest covers collection, storage and cleaning.</p></details>
-      <details><summary>What can I hand over?</summary><p>Kitchenware, bedding, lamps, small furniture, bikes, study things. Basically anything in a student room that you can carry. We can't take mattresses or opened food.</p></details>
-      <details><summary>Is it only for international students?</summary><p>No. Anyone with a college email who's moving out or moving in can use Handover. It's just especially handy when you can't take things home on a plane.</p></details>
+      <details><summary>Do I have to list everything myself?</summary><p>No. When you book a pickup, tick "list everything for me" and we'll photograph and list it all when we collect.</p></details>
+      <details><summary>What can I hand over?</summary><p>Kitchenware, duvets, lamps, small furniture, bikes, study things. Basically anything in a student room that you can carry. We can't take mattresses, pillows or opened food. Pillows in our bundles are always new.</p></details>
+      <details><summary>I live in a house share, not a residence. Does it work?</summary><p>Yes. Book a €5 pickup from any address in Dublin, or bring your things to the nearest collection day.</p></details>
+      <details><summary>Is it only for international students?</summary><p>No. Anyone with a college email who's moving out or moving in can use Handover, whether you're in halls, a house share or an apartment. It's just especially handy when you can't take things home on a plane.</p></details>
     </div>
   </section>
 
@@ -452,9 +488,9 @@
   <section style="padding-top:0">
     <div class="wrap">
       <div class="final">
-        <h2 data-aud="leaving">Leaving this December?</h2>
+        <h2 data-aud="leaving">Leaving in December or May?</h2>
         <h2 data-aud="arriving" class="hidden">Arriving this January?</h2>
-        <p class="lead" data-aud="leaving">Get a reminder a week before your residence's collection day, so you can clear your room in one evening.</p>
+        <p class="lead" data-aud="leaving">Get a reminder a week before your collection day, so you can clear your room in one evening.</p>
         <p class="lead hidden" data-aud="arriving">Get first pick of items and starter bundles before they're gone.</p>
         <button class="btn btn-primary" data-cta>Get notified</button>
       </div>
@@ -469,11 +505,7 @@
 </footer>
 
 <div class="modal-bg hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-  <div class="modal">
-    <h3 id="modal-title">Thanks for your interest!</h3>
-    <p>Handover is a prototype for a university project, so we aren't taking sign-ups, bookings or reservations yet, and nothing you click here is saved.</p>
-    <button class="btn btn-primary" id="modal-close">Got it</button>
-  </div>
+  <div class="modal" id="modal-body"></div>
 </div>
 
 <!-- Inline illustrations, swapped into the ICON_ placeholders below -->
@@ -521,7 +553,7 @@
     { name: 'Saucepan set (3 pans)', cat: 'kitchen', icon: 'POT',    price: 10, cond: 'Good',      where: 'Rathmines · 15 Dec' },
     { name: 'Desk lamp, warm LED',   cat: 'study',   icon: 'LAMP',   price: 10, cond: 'Like new',  where: 'Docklands · 19 Dec' },
     { name: 'Swivel desk chair',     cat: 'study',   icon: 'CHAIR',  price: 20, cond: 'Fair',      where: 'City-centre · 12 Dec' },
-    { name: 'Double duvet + 2 pillows', cat: 'bedroom', icon: 'DUVET', price: 15, cond: 'Washed', where: 'Rathmines · 15 Dec' },
+    { name: 'Double duvet, 10.5 tog', cat: 'bedroom', icon: 'DUVET', price: 12, cond: 'Washed 60°C', where: 'Rathmines · 15 Dec' },
     { name: 'Full-length mirror',    cat: 'bedroom', icon: 'MIRROR', price: 12, cond: 'Good',      where: 'Docklands · 19 Dec' },
     { name: 'Clothes drying rack',   cat: 'bedroom', icon: 'RACK',   price: 6,  cond: 'Good',      where: 'City-centre · 12 Dec' },
     { name: 'City bike + lock',      cat: 'bikes',   icon: 'BIKE',   price: 60, cond: 'Serviced',  where: 'Rathmines · 15 Dec' }
@@ -549,7 +581,7 @@
   const examples = {
     kettle: { title: 'Electric kettle, 1.7L, stainless steel', cat: 'Kitchen', cond: 'Good: light limescale, works perfectly', price: 8, newp: 25, desc: 'Fast-boil kettle, used for one semester. Descaled and ready for your first cup of tea.' },
     lamp:   { title: 'Adjustable desk lamp, warm white LED', cat: 'Study', cond: 'Like new: no marks', price: 10, newp: 30, desc: 'Bendable arm, warm white light, easy on the eyes for late-night study. Bulb included.' },
-    duvet:  { title: 'Double duvet + 2 pillows (washed)', cat: 'Bedroom', cond: 'Good: professionally washed', price: 15, newp: 45, desc: 'Medium-weight duvet, warm enough for a Dublin winter. Comes with two pillows, freshly washed.' }
+    duvet:  { title: 'Double duvet, 10.5 tog', cat: 'Bedroom', cond: 'Good: washed at 60°C and sealed before handover', price: 12, newp: 35, desc: 'Medium-weight duvet, warm enough for a Dublin winter. (We don\'t take used pillows: bundles always come with new ones.)' }
   };
   const listing = document.getElementById('listing');
   document.querySelectorAll('.pick').forEach(btn => btn.addEventListener('click', () => {
@@ -565,22 +597,110 @@
         </div>
         <div class="field"><label>Condition</label><div class="val">${e.cond}</div></div>
         <div class="field"><label>Description</label><div class="val">${e.desc}</div></div>
-        <div class="handover-pill">📦 <strong>Handover:</strong> drop off Sat 12 Dec at your residence, or book a €5 pickup</div>
+        <div class="handover-pill">📦 <strong>Handover:</strong> drop off at a collection day near you, or book a €5 pickup</div>
         <div class="edit-hint"><span>✏️ Everything is editable before you publish.</span><button class="btn btn-primary btn-sm" data-cta>Publish listing</button></div>`;
       bindCtas(listing);
     }, 1100);
   }));
 
-  // CTA: prototype message only, nothing is collected
+  // CTA flows. On the public pretotype (SIMULATION = false) nothing is saved or sent anywhere:
+  // the last step only shows a prototype notice. The local simulation copy sets SIMULATION = true.
+  const SIMULATION = false;
+  window.__events = [];
+  function track(t, d) { window.__events.push(Object.assign({ t }, d || {})); }
   const modal = document.getElementById('modal');
+  const body = document.getElementById('modal-body');
+  const esc = x => String(x).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const AREAS = ['City-centre residences', 'Rathmines & Ranelagh', 'Docklands & Grand Canal', 'Phibsborough & Drumcondra', 'Somewhere else in Dublin'];
+  const PICKUP_DAYS = ['Wed 16 Dec', 'Fri 18 Dec', 'Sat 19 Dec', 'Sun 20 Dec', 'Fri 28 May', 'Sun 30 May', 'Tue 1 Jun'];
+  const ARRIVALS = ['Before 9 Jan', '9–12 Jan', '13–16 Jan', '17–20 Jan', 'After 20 Jan', 'September'];
+  const INP = 'style="width:100%;padding:10px;border-radius:10px;border:1px solid #e6e0d4;font:inherit;background:#fff"';
+  const field = (id, label, html) => `<div class="field"><label for="${id}">${label}</label>${html}</div>`;
+  const text = (id, ph) => `<input id="${id}" type="text" placeholder="${ph}" ${INP}>`;
+  const sel = (id, arr) => `<select id="${id}" ${INP}>${arr.map(x => `<option>${esc(x)}</option>`).join('')}</select>`;
+  const EMAIL = field('f-email', 'College email', `<input id="f-email" type="email" placeholder="you@college.ie" ${INP}>`);
+  const FLOWS = {
+    notify: {
+      h: () => 'Get a reminder before your collection day',
+      p: "We'll message you a week before, so you can clear your room in one evening.",
+      fields: () => field('f-when', 'When are you moving?', sel('f-when', ['Leaving in December', 'Arriving in January', 'Leaving in May', 'Arriving in September'])) + EMAIL,
+      btn: 'Notify me',
+      ok: v => `You're on the list (<strong>${esc(v.when)}</strong>). We'll be in touch a week before.`
+    },
+    reserve: {
+      h: ctx => `Reserve: ${esc(ctx || 'item')}`,
+      p: 'Free to reserve. You check it and pay by card or Revolut when you collect it, never upfront.',
+      fields: () => field('f-area', 'Where are you staying?', sel('f-area', AREAS)) + field('f-arrive', 'When do you arrive?', sel('f-arrive', ARRIVALS)) + EMAIL,
+      btn: 'Reserve (pay on collection)',
+      ok: (v, ctx) => `<strong>${esc(ctx)}</strong> is held for you. Collect it at <strong>${esc(v.area)}</strong> when you arrive (${esc(v.arrive)}). We'll email the exact time and place.`
+    },
+    pickup: {
+      h: () => 'Book a pickup (€5)',
+      p: 'We collect everything in one trip from a residence, house share or apartment. No listing needed: we can photograph and list it for you.',
+      fields: () => field('f-addr', 'Address or residence', text('f-addr', 'e.g. 12 Example Road, Phibsborough')) +
+        field('f-room', 'Room or apartment number', text('f-room', 'e.g. Room 4B')) +
+        `<div class="field-row">${field('f-day', 'Pickup day', sel('f-day', PICKUP_DAYS))}${field('f-slot', 'Time', sel('f-slot', ['Morning 9–12', 'Afternoon 12–4', 'Evening 4–8']))}</div>` +
+        field('f-items', 'Roughly what are we collecting?', text('f-items', 'e.g. kettle, duvet, desk, bike')) +
+        `<label style="display:flex;gap:8px;align-items:center;font-size:.92rem;margin:4px 0 12px"><input id="f-listforme" type="checkbox" checked> List everything for me (no photos needed)</label>` + EMAIL,
+      btn: 'Book pickup',
+      need: ['addr'],
+      ok: v => `Pickup booked for <strong>${esc(v.day)}, ${esc(v.slot)}</strong> at <strong>${esc(v.addr)}${v.room ? ', ' + esc(v.room) : ''}</strong>.<br>Collecting: ${esc(v.items || 'your items')}.${v.listforme ? " We'll photograph and list everything for you." : ''} You pay the €5 when we arrive.`
+    },
+    publish: {
+      h: () => 'Create your account to publish',
+      p: 'Sign in with your college email. Your listing goes live straight away.',
+      fields: () => EMAIL,
+      btn: 'Publish listing',
+      ok: () => "Your listing is live. We'll tell you when it sells."
+    }
+  };
+  function flowFor(btn) {
+    const l = btn.textContent.toLowerCase();
+    if (l.includes('reserve')) return 'reserve';
+    if (l.includes('pickup')) return 'pickup';
+    if (l.includes('publish')) return 'publish';
+    return 'notify';
+  }
+  function contextFor(btn) {
+    const card = btn.closest('.item, .bundle');
+    const n = card && card.querySelector('.name, h3');
+    return n ? n.textContent.trim() : '';
+  }
   let lastFocus = null;
-  function openModal() { lastFocus = document.activeElement; modal.classList.remove('hidden'); document.getElementById('modal-close').focus(); }
   function closeModal() { modal.classList.add('hidden'); if (lastFocus) lastFocus.focus(); }
-  function bindCtas(root) { root.querySelectorAll('[data-cta]').forEach(b => b.addEventListener('click', openModal)); }
+  function openFlow(btn) {
+    lastFocus = btn;
+    const flow = flowFor(btn), ctx = contextFor(btn), f = FLOWS[flow];
+    track('cta_click', { flow, label: btn.textContent.trim(), ctx });
+    body.innerHTML = `<h3 id="modal-title">${f.h(ctx)}</h3><p>${f.p}</p>${f.fields()}
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px"><button class="btn btn-primary" id="x-submit">${f.btn}</button><button class="btn btn-ghost" id="x-cancel">Not now</button></div>
+      <p id="x-msg" style="color:#b3261e;font-size:.85rem;margin:8px 0 0"></p>`;
+    modal.classList.remove('hidden');
+    document.getElementById('x-cancel').onclick = () => { track('cta_abandon', { flow, ctx }); closeModal(); };
+    document.getElementById('x-submit').onclick = () => {
+      const v = {};
+      body.querySelectorAll('[id^="f-"]').forEach(el => { v[el.id.slice(2)] = el.type === 'checkbox' ? el.checked : el.value.trim(); });
+      const msg = document.getElementById('x-msg');
+      const missing = (f.need || []).filter(k => !v[k]);
+      if (missing.length) { track('cta_submit_invalid', { flow, ctx, why: 'missing ' + missing.join(',') }); msg.textContent = 'Please fill in your address or residence.'; return; }
+      if (!/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(v.email)) { track('cta_submit_invalid', { flow, ctx, why: 'email' }); msg.textContent = 'Please enter your college email.'; return; }
+      if (/@(gmail|googlemail|hotmail|outlook|live|yahoo|icloud|me|proton|protonmail)\./i.test(v.email)) { track('cta_submit_invalid', { flow, ctx, why: 'personal email' }); msg.textContent = 'Please use your college email, not a personal one.'; return; }
+      const details = Object.assign({}, v); delete details.email;
+      track('cta_submit', { flow, ctx, details });
+      body.innerHTML = SIMULATION
+        ? `<h3>Done</h3><p>${f.ok(v, ctx)}</p><button class="btn btn-primary" id="x-close">Close</button>`
+        : `<h3>Thanks for your interest!</h3><p>Handover is a prototype for a university project, so nothing was booked or saved. If it were live, you'd now see:</p><p style="background:var(--sun-tint);border-radius:12px;padding:12px">${f.ok(v, ctx)}</p><button class="btn btn-primary" id="x-close">Got it</button>`;
+      document.getElementById('x-close').onclick = closeModal;
+    };
+  }
+  function bindCtas(root) { root.querySelectorAll('[data-cta]').forEach(b => b.addEventListener('click', () => openFlow(b))); }
   bindCtas(document);
-  document.getElementById('modal-close').addEventListener('click', closeModal);
   modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal(); });
+  document.querySelectorAll('[data-aud-btn]').forEach(b => b.addEventListener('click', () => track('toggle', { aud: b.dataset.audBtn })));
+  document.querySelectorAll('.pick').forEach(b => b.addEventListener('click', () => track('demo', { item: b.dataset.item })));
+  document.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () => track('filter', { cat: b.dataset.cat })));
+  document.querySelectorAll('details').forEach(d => d.addEventListener('toggle', () => d.open && track('faq', { q: d.querySelector('summary').textContent.trim() })));
 
   renderItems('all');
 </script>
